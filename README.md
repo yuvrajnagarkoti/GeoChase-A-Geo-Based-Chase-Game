@@ -89,9 +89,9 @@ Race Course / Police Line zone
 
 🧑‍💻 Developers
 Created with ❤️ by:
+-> Yuvraj
 -> Garvit Sharma
 -> Vansh Rawat
--> Yuvraj Nagarkoti
 -> Shreyansh Mittal
 
 If you'd like to contribute or report a bug, please open an issue or pull request.
