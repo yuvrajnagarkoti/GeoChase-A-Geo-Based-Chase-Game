@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GeoChase - Cartoon Edition</title>
+  <style>
+    body {
+      background-color: #6bbf59;
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #gameCanvas {
+      image-rendering: pixelated;
+      box-shadow: 0 0 24px rgba(0, 0, 0, 0.4);
+      border-radius: 12px;
+      background-color: #a2d149;
+    }
+
+    h1 {
+      color: white;
+      text-shadow: 2px 2px #333;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌍 GeoChase</h1>
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- Include the map -->
+  <script src="finalmap.js"></script>
+  <!-- Include the game logic -->
+  <script src="finalscript.js"></script>
+  <!-- Keyboard support -->
+  <script>
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowUp') move('up');
+      if (e.key === 'ArrowDown') move('down');
+      if (e.key === 'ArrowLeft') move('left');
+      if (e.key === 'ArrowRight') move('right');
+    });
+  </script>
+</body>
+</html>
